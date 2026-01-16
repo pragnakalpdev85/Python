@@ -36,3 +36,41 @@ dict1.popitem()
 print(dict1)
 dict1.clear()
 print(dict1)
+
+#nested dictionary
+cars = {
+    "car1":{
+        "name": "thar",
+        "model": 2022
+    },
+    "car2":{
+        "name":"scorpio",
+        "model": 2025
+    }
+}
+
+#printing out nested dictionari
+for i,obj in cars.items():
+    print(i," : ")
+    for k in obj:
+        print("  ",k," : ",obj[k])
+
+#accessing element from nested dictionary
+print(cars["car1"]["name"])
+
+#removing element using pop in nested dictionary
+cars["car1"].pop("name")
+print(cars)
+
+#removing element from nested dictionary using popitems
+cars["car1"].popitem()
+print(cars)
+
+#adding element to the nested dictionary
+cars["car1"]["name"] = "thar"
+print(cars)
+
+#clearing out all data from dictionary using clear()
+cars.clear()
+print(cars)
+
