@@ -30,10 +30,12 @@ def delete_file(filename):
 filename = "26demofile.txt"
 
 text = """hello, everyone here is the file which contains text.
-The text is for manipulating the file and other file resources.
+The goal is to manipulate the file content and other file resources.
 The manipulation is going to be done from python programe."""
 
 newtext = "\nPrograme was written on january 17."
+
+delete_file(filename)
 
 #create file and write data and reading the data
 create_and_write(filename,text)
