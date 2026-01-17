@@ -30,6 +30,13 @@ print(str1.upper())
 #to lowecase
 print(str1.lower())
 
+#strip will remove white spaces from start and end
+strin2 = "   hello   "
+print(str2.strip())
+
+#replace h with p
+print(str2.replace("h","p"))
+
 str3 = "hii"
 str4 = "hello"
 #concatinating 2 strings
@@ -38,4 +45,9 @@ print(str3+str4)
 #fromating string
 a = 25
 print(f"the number is {a}")
+
+#spliting string into list of strings
+str5 = "hello, how are you"
+strlist = str5.split()
+print(strlist)
 
