@@ -16,8 +16,8 @@ else:
 num3 = int(input("enter a number: "))
 flag = True
 if(num3 == 1 or num3 == 0): flag = False
-for i in range(2,num3//2):
-    if(num3%i):
+for i in range(2,(num3//2)+1):
+    if(num3%i == 0):
         flag = False
         break
 if(flag == True):

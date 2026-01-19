@@ -10,7 +10,7 @@ def read_file(filename):
     with open(filename,"r") as f:
         return f.read()
     
-#erase existing data and write new
+#erase existing data and write new data
 def write_filedata(filename,text):
     with open(filename,"w") as f:
         f.write(text)
