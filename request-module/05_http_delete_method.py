@@ -1,7 +1,7 @@
 import requests
 
-url = 'https://jsonplaceholder.typicode.com/posts/1'
+url = "https://httpbin.org/delete"
 
 #deleting resource
 response = requests.delete(url)
-print(f"Deleted. Status: {response.status_code}")
+print(response.json())

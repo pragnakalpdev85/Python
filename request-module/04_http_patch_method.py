@@ -1,10 +1,11 @@
 import requests
 
-url = 'https://jsonplaceholder.typicode.com/posts/1'
+url = "https://httpbin.org/patch"
+
 partial_update = {
     'title': 'New Title Only'
 }
 
-#parcially updating resources
+#partially updating data 
 response = requests.patch(url, json=partial_update)
 print(f"Patched: {response.json()}")
