@@ -11,7 +11,6 @@ url = 'https://httpbin.org/get'
 try:
     response = requests.get(url, timeout=5)
     
-    # Raise an exception for 4xx and 5xx status codes
     response.raise_for_status()
     
     # Process successful response
